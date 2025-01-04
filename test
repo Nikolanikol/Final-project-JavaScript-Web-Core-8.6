@@ -1,0 +1,17 @@
+                            <div  class="repaire-row__item">
+                                <div class="repaire-row__header">
+                                    <div class="repaire-row__subtitle">Ремонтные услуги</div>
+                                    <div class="repaire-row__title">Тестирование с выдачей технического заключения</div>
+                                </div>
+                                <div class="repaire-row__body">
+                                    <div class="repaire-row__subtitle">Цена</div>
+                                    <div class="repaire-row__title">Бесплатно</div>
+                                </div>
+                                <div class="repaire-row__footer">
+                                    <div class="repaire-row__wrapper">
+                                        <div class="repaire-row__subtitle">Цена</div>
+                                        <div class="repaire-row__title">Бесплатно</div>
+                                    </div>
+                                    <button class="repaire-row__button">Заказать</button>
+                                </div>
+                            </div>

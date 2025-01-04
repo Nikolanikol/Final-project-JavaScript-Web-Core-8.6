@@ -1,0 +1,117 @@
+.repaire-section {
+    background-color: rgba(248, 248, 248, 1);
+    padding-bottom: 50px;
+    // .repaire-section__title
+
+    &__title {
+
+    }
+
+    // .repaire-section__row
+
+    &__row {
+    }
+    &__button{
+        padding-left: 32px;
+        padding-block: 5px;
+        position: relative;
+        top: 0;
+        &::before{
+            content: '';
+            width: 24px;
+            height: 24px;
+            background-image: url('../img/icon/brands-arrow-button.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            // transform: translateY(-50%);
+        }
+
+        &:hover{
+            top: 4px;
+            // transform: scale(1.5);
+            text-decoration: underline;
+        }
+
+    }
+}
+.title {
+    background-color: white;
+
+}
+.repaire-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 32px;
+    padding: 24px 32px;
+    &__title {
+    }
+    &__item{
+        border-radius: 20px;
+    }
+
+    &__item {
+        padding: 16px;
+        width: 240px;
+        height: 160px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    // .repaire-row__btn
+
+    &__btn {
+        align-self: flex-end;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid $btn-red-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.brand-items {
+
+    // .brand-items__button
+
+    &__button {
+    }
+}
+.swiper-repaire{
+    display: none;
+}
+
+@media(max-width:640px){
+    .repaire-section{
+        // background-color: rebeccapurple;
+    }
+    .swiper-repaire{
+        display: block;
+        max-width: 320px;
+        overflow: hidden;
+        // border: 1px solid red;
+        margin: 0 auto;
+        align-self: center;
+
+    }
+    .repaire-row{
+        display: none;
+    }
+    .swiper-repaire-wrapper{
+        width: 2000px;
+        height: 160px; 
+        position: relative; 
+        left: 0;
+    }
+    .repaire-section__button{
+        display: none;
+    }
+}

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div id="nav-section" class="nav-section ">
+            <div  class="menu">
+                <div class="header">
+                    <div class="header__row">
+                        <button type="button"  class="header__burger-btn"> <span></span></button>
+                        <a href="#"><img src="./img/icon/logo.svg" alt="logo" class="header__img"></a>
+                    </div>
+                    <button class="header__search-btn"><img src="./img/icon/search-icon-white.svg" alt="search"></button>
+                </div>
+    
+                <nav class="nav">
+                    <ul class="nav__list list" >
+                        <li class="list__item list__item-active"><a href="#">Ремонт техники</a></li>
+                        <li class="list__item"><a href="#">Услуги и сервисы</a></li>
+                        <li class="list__item"><a href="#">Корпоративным клиентам</a></li>
+                        <li class="list__item"><a href="#">Продавцам техники</a></li>
+                        <li class="list__item"><a href="#">Партнерам</a></li>
+                        <li class="list__item"><a href="#">Наши сервисные центры</a></li>
+                        <li class="list__item"><a href="#">Производителям</a></li>
+                        <li class="list__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+    
+                <footer class="menu__footer footer">
+                    <div class="footer__btn-row">
+                        <button class="footer__btn-item"><img src="./img/icon/phone.svg" alt="phone"></button>
+                        <button class="footer__btn-item"><img src="./img/icon/message.svg" alt="message"></button>
+                        <button class="footer__btn-item"><img src="./img/icon/men.svg" alt="men"></button>
+                    </div>
+                    <div class="footer__mail"><span>mail@cps.com</span></div>
+                    <div class="footer__phone"><span>8 800 890 8900</span></div>
+                    <div class="footer__lang-row lang-row">
+                        <button class="lang-row__item lang-row__item-active ">RU</button>
+                        <button class="lang-row__item">EN</button>
+                        <button class="lang-row__item">CH</button>
+                    </div>
+                </footer>
+    
+    
+            </div>
+        </div>
+        <div class="main-section">
+
+            <section class="services-section">
+                <header class="header header-mobile ">
+                    <div class="container">
+                        <div class="header__row">
+                            <div  class="burger-btn">
+                                <span></span>
+                            </div>
+                            <a href="#"><img src="./img/icon/logo.svg" alt="logo"></a>
+                            <div class="header__line"></div>
+                            <div class="header__btns-row">
+                                <button class="header__button" type="button" ><img src="./img/icon/instruments.svg" alt="оставить заявку"></button>
+                                <button class="header__button" type="button" ><img src="./img/icon/search.svg" alt="оставить заявку"></button>
+        
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <header class="header header-laptop ">
+                    <div class="container">
+                        <div class="header__row">
+                            <div class="header-laptop__wrapper">
+                                <div  class="burger-btn">
+                                    <span></span>
+                                </div>
+                                <div class="header__line"></div>
+            
+                                <a href="#"><img src="./img/icon/logo.svg" alt="logo"></a>
+                            </div>
+        
+        
+                            <div class="header__btns-row">
+                                <button class="header__button" type="button" ><img src="./img/icon/phone.svg" alt="оставить заявку"></button>
+                                <button class="header__button" type="button" ><img src="./img/icon/message.svg" alt="оставить заявку"></button>
+                                <button class="header__button" type="button" ><img src="./img/icon/men.svg" alt="оставить заявку"></button>
+        
+                                <div class="header__line"></div>
+        
+                                <button class="header__button" type="button" ><img src="./img/icon/instruments.svg" alt="оставить заявку"></button>
+                                <button class="header__button" type="button" ><img src="./img/icon/search.svg" alt="оставить заявку"></button>
+        
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <header class="header header-dextop">
+                    <div class="container">
+                        <div class="header__row">
+                           
+                            <div class="header__btns-row btns-row ">
+                                <div class="btns-row__item">
+                                    <span>Оставить заявку</span>
+                                    <button class="header__button" type="button" ><img src="./img/icon/instruments.svg" alt="оставить заявку"></button>
+                                </div>
+                                <div class="btns-row__item">
+                                    <span>Статус ремонта</span>
+                                    <button class="header__button" type="button" ><img src="./img/icon/search.svg" alt="поиск"></button>
+                                </div>
+        
+        
+                            </div>
+                        </div>
+                    </div>
+                </header>
+        
+                <section class="services">
+                    <div class="container">
+                        <h2 class="services__title">Услуги и сервисы</h2>
+                        <div class="services__slider">
+                            <div class="services__row ">
+                                <button class="services__item item-active">Ремонтируемые бренды</button>
+                                <button class="services__item">Ремонтируемые устройства</button>
+                                <button class="services__item">Цены на услуги</button>
+                                <button class="services__item">Адреса сервисных центров</button>
+                                <button class="services__item">Специальные цены</button>
+                                <button class="services__item">Отзывы</button>
+                            </div>
+         
+                        </div>
+                        <div class="services__description description">
+                            <div class="description___row">
+                                <div class="description__text">
+                                    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+        
+                                       <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                                        <button type="button" class="description__button">Читать далее</button>
+                                </div>
+                                <img src="./img/img.png" alt="cps фото" class="description__img">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            
+            <section class="brands-section">
+                <div class="container">
+                    <div class="slider-section">
+                        <h2 class="slider-section__title title">
+                            Ремонт техники различных брендов
+                        </h2>
+            
+                        <div class="slider__wrapper mobile-slider">
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                  <!-- Slides -->
+                                  <div class="swiper-slide">
+                                    <div class="slider__row">
+                                        <div class="slider__img-wrapper">
+                                            <img class="slider__img" src="./img/1.svg" alt="1">
+                                    
+                                        </div>
+                                        <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__row">
+                                        <div class="slider__img-wrapper">
+                                            <img class="slider__img" src="./img/2.svg" alt="1">
+                    
+                                        </div>
+                                        <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__row">
+                                        <div class="slider__img-wrapper">
+                                            <img class="slider__img" src="./img/3.svg" alt="1">
+                                    
+                                        </div>
+                                        <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__row">
+                                        <div class="slider__img-wrapper">
+                                            <img class="slider__img" src="./img/4.svg" alt="1">
+                                    
+                                        </div>
+                                        <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__row">
+                                        <div class="slider__img-wrapper">
+                                            <img class="slider__img" src="./img/5.svg" alt="1">
+                                    
+                                        </div>
+                                        <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__row">
+                                        <div class="slider__img-wrapper">
+                                            <img class="slider__img" src="./img/6.svg" alt="1">
+                                    
+                                        </div>
+                                        <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__row">
+                                        <div class="slider__img-wrapper">
+                                            <img class="slider__img" src="./img/7.svg" alt="1">
+                                    
+                                        </div>
+                                        <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__row">
+                                        <div class="slider__img-wrapper">
+                                            <img class="slider__img" src="./img/8.svg" alt="1">
+                                    
+                                        </div>
+                                        <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__row">
+                                        <div class="slider__img-wrapper">
+                                            <img class="slider__img" src="./img/1.svg" alt="1">
+                                    
+                                        </div>
+                                        <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__row">
+                                        <div class="slider__img-wrapper">
+                                            <img class="slider__img" src="./img/2.svg" alt="1">
+                                    
+                                        </div>
+                                        <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="slider__row">
+                                        <div class="slider__img-wrapper">
+                                            <img class="slider__img" src="./img/3.svg" alt="1">
+                                    
+                                        </div>
+                                        <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                                    </div>
+                                  </div>
+                    
+                                  ...
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+                              
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                              
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                              </div>
+                        </div>
+            
+                    </div>
+            
+                    <section class="brand-items">
+                        <div class="brand-items__row">
+                            <div  class="slider__row">
+                                <div class="slider__img-wrapper">
+                                    <img class="slider__img" src="./img/1.svg" alt="1">
+                            
+                                </div>
+                                <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                            </div>
+                            <div class="slider__row">
+                                <div class="slider__img-wrapper">
+                                    <img class="slider__img" src="./img/1.svg" alt="1">
+                            
+                                </div>
+                                <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                            </div>
+                            <div class="slider__row">
+                                <div class="slider__img-wrapper">
+                                    <img class="slider__img" src="./img/1.svg" alt="1">
+                            
+                                </div>
+                                <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                            </div>
+                            <div class="slider__row">
+                                <div class="slider__img-wrapper">
+                                    <img class="slider__img" src="./img/1.svg" alt="1">
+                            
+                                </div>
+                                <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                            </div>
+                            <div class="slider__row">
+                                <div class="slider__img-wrapper">
+                                    <img class="slider__img" src="./img/1.svg" alt="1">
+                            
+                                </div>
+                                <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                            </div>
+                            <div class="slider__row">
+                                <div class="slider__img-wrapper">
+                                    <img class="slider__img" src="./img/1.svg" alt="1">
+                            
+                                </div>
+                                <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                            </div>
+                            <div class="slider__row">
+                                <div class="slider__img-wrapper">
+                                    <img class="slider__img" src="./img/1.svg" alt="1">
+                            
+                                </div>
+                                <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                            </div>
+                            <div class="slider__row">
+                                <div class="slider__img-wrapper">
+                                    <img class="slider__img" src="./img/1.svg" alt="1">
+                            
+                                </div>
+                                <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                            </div>
+                            <div class="slider__row">
+                                <div class="slider__img-wrapper">
+                                    <img class="slider__img" src="./img/1.svg" alt="1">
+                            
+                                </div>
+                                <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                            </div>
+                            <div class="slider__row">
+                                <div class="slider__img-wrapper">
+                                    <img class="slider__img" src="./img/1.svg" alt="1">
+                            
+                                </div>
+                                <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                            </div>
+                            <div class="slider__row">
+                                <div class="slider__img-wrapper">
+                                    <img class="slider__img" src="./img/1.svg" alt="1">
+                            
+                                </div>
+                                <button type="button" class="slider__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                            </div>
+                        </div>
+            
+                        <button class="brand-items__button">Показать все</button>
+                    </section>
+                </div>
+            </section>
+
+            <section class="repaire-section">
+
+
+                <h2 class="repaire-section__title title">
+                    Ремонт техники различных брендов
+                </h2>
+                
+                <div class="repaire-section__row repaire-row">
+                    <div  class="repaire-row__item">
+                        <h3 class="repaire-row__title">Рeмонт ноутбуков</h3>
+                        <button type="button" class="repaire-row__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                    </div>
+                    <div  class="repaire-row__item">
+                        <h3 class="repaire-row__title">Румонт планшетов</h3>
+                        <button type="button" class="repaire-row__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                    </div>
+                    <div  class="repaire-row__item">
+                        <h3 class="repaire-row__title">Румонт ПК</h3>
+                        <button type="button" class="repaire-row__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                    </div>
+                    <div  class="repaire-row__item">
+                        <h3 class="repaire-row__title">Румонт мониторов</h3>
+                        <button type="button" class="repaire-row__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                    </div>
+ 
+                </div>
+                
+
+                <div class="swiper-repaire">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper swiper-repaire-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div  class="repaire-row__item">
+                        <h3 class="repaire-row__title">Рeмонт ноутбуков</h3>
+                        <button type="button" class="repaire-row__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                    </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div  class="repaire-row__item">
+                        <h3 class="repaire-row__title">Рeмонт планшетов</h3>
+                        <button type="button" class="repaire-row__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                    </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div  class="repaire-row__item">
+                        <h3 class="repaire-row__title">Рeмонт ПК</h3>
+                        <button type="button" class="repaire-row__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                    </div>
+                      <!-- <div class="swiper-slide">
+                        <div  class="repaire-row__item">
+                        <h3 class="repaire-row__title">Рeмонт мониторов</h3>
+                        <button type="button" class="repaire-row__btn" ><img src="./img/icon/brands-arrow-right.svg" alt=""></button>
+                    </div> -->
+   
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+                <button class="repaire-section__button">Показать все</button>
+
+            </section>
+
+            <section class="price-section">
+
+                <h2 class="price-section__title title">Цены на услуги</h2>
+
+                <div class="price-section__row">
+                    <div class="price-section__item price-section__item-gray">
+                        <div class="grid-container">
+                            <div class="grid-item">Ремонтные услуги</div>
+                            <div class="grid-item">Цена</div>
+                            <div class="grid-item">Срок</div>
+                            <div class="grid-item"></div>
+                        </div>
+                    </div>
+                    <div class="price-section__item">
+                        <div class="grid-container">
+                            <div class="grid-item">Диагностика</div>
+                            <div class="grid-item">Бесплатно</div>
+                            <div class="grid-item">30 мин</div>
+                            <div class="grid-item"><button class="price-section__button">Заказать</button></div>
+                        </div>
+                    </div>
+                    <div class="price-section__item">
+                        <div class="grid-container">
+                            <div class="grid-item">Диагностика</div>
+                            <div class="grid-item">Бесплатно</div>
+                            <div class="grid-item">30 мин</div>
+                            <div class="grid-item"><button class="price-section__button">Заказать</button></div>
+                        </div>
+                    </div>
+                    <div class="price-section__item">
+                        <div class="grid-container">
+                            <div class="grid-item">Диагностика</div>
+                            <div class="grid-item">Бесплатно</div>
+                            <div class="grid-item">30 мин</div>
+                            <div class="grid-item"><button class="price-section__button">Заказать</button></div>
+                        </div>
+                    </div>
+                    <div class="price-section__item">
+                        <div class="grid-container">
+                            <div class="grid-item">Диагностика</div>
+                            <div class="grid-item">Бесплатно</div>
+                            <div class="grid-item">30 мин</div>
+                            <div class="grid-item"><button class="price-section__button">Заказать</button></div>
+                        </div>
+                    </div>
+                    <div class="price-section__item">
+                        <div class="grid-container">
+                            <div class="grid-item">Диагностика</div>
+                            <div class="grid-item">Бесплатно</div>
+                            <div class="grid-item">30 мин</div>
+                            <div class="grid-item"><button class="price-section__button">Заказать</button></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-price">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper swiper-repaire-wrapper">
+                      <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div  class="repaire-row__item">
+                                <div class="repaire-row__header">
+                                    <div class="repaire-row__subtitle">Ремонтные услуги</div>
+                                    <div class="repaire-row__title">Тестирование с выдачей<br> технического заключения</div>
+                                </div>
+                                <div class="repaire-row__body">
+                                    <div class="repaire-row__subtitle">Цена</div>
+                                    <div class="repaire-row__title">Бесплатно</div>
+                                </div>
+                                <div class="repaire-row__footer">
+                                    <div class="repaire-row__wrapper">
+                                        <div class="repaire-row__subtitle">Срок</div>
+                                        <div class="repaire-row__title">30 минут</div>
+                                    </div>
+                                    <button class="repaire-row__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div  class="repaire-row__item">
+                                <div class="repaire-row__header">
+                                    <div class="repaire-row__subtitle">Ремонтные услуги</div>
+                                    <div class="repaire-row__title">Диагностика</div>
+                                </div>
+                                <div class="repaire-row__body">
+                                    <div class="repaire-row__subtitle">Цена</div>
+                                    <div class="repaire-row__title">Бесплатно</div>
+                                </div>
+                                <div class="repaire-row__footer">
+                                    <div class="repaire-row__wrapper">
+                                        <div class="repaire-row__subtitle">Срок</div>
+                                        <div class="repaire-row__title">Неделя</div>
+                                    </div>
+                                    <button class="repaire-row__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div  class="repaire-row__item">
+                                <div class="repaire-row__header">
+                                    <div class="repaire-row__subtitle">Ремонтные услуги</div>
+                                    <div class="repaire-row__title">Замена дисплея</div>
+                                </div>
+                                <div class="repaire-row__body">
+                                    <div class="repaire-row__subtitle">Цена</div>
+                                    <div class="repaire-row__title">3000р</div>
+                                </div>
+                                <div class="repaire-row__footer">
+                                    <div class="repaire-row__wrapper">
+                                        <div class="repaire-row__subtitle">Срок</div>
+                                        <div class="repaire-row__title">3 дня</div>
+                                    </div>
+                                    <button class="repaire-row__button">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+          
+                    </div>
+                 
+             
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+
+
+
+
+
+
+
+
+    
+  
+
+
+
+            </section>
+
+            <section class="oferta">
+                <p class="oferta-text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+                <a href="#" class="oferta-link">Получить коммерческое предложение</a>
+            </section>
+
+            <footer class="footer"> 
+                <div class="footer-row">
+                    <div class="footer-item">© 2019 CPS <br>Разработано командой Apesong </div>
+                    <div class="footer-item">Политика конфиденциальности</div>
+                    <div class="footer-item">Информация, размещенная на данной странице, не является публичной офертой </div>
+                </div>
+            </footer>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+        console.log('swiper')
+        const swiper = new Swiper('.swiper',  {
+// Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            },
+            centeredSlides: true, // Централизация активного слайда
+            slidesPerView: 0, // Показывает один слайд и часть следующего
+            spaceBetween: 10, // Расстояние между слайдами
+            slidesOffsetBefore: 10,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            });
+        const swiperRepaire = new Swiper('.swiper-repaire', {
+// Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            },
+            centeredSlides: true, // Централизация активного слайда
+            slidesPerView: 0, // Показывает один слайд и часть следующего
+            spaceBetween: 30, // Расстояние между слайдами
+            slidesOffsetBefore: 10,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            });
+
+            const swiperPrice = new Swiper('.swiper-price', {
+// Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            },
+            centeredSlides: true, // Централизация активного слайда
+            slidesPerView: 0, // Показывает один слайд и часть следующего
+            spaceBetween: 30, // Расстояние между слайдами
+            slidesOffsetBefore: 10,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            });
+
+
+            
+            
+        </script>
+    <script src="./js/index.js"></script>
+
+  </body>
+</html>
+<!-- nav-section
+main-section -->

@@ -1,0 +1,26 @@
+body{
+    font-family: 'TT Lakes Compressed';
+    font-weight: 500;
+    font-size: 16px;
+}
+.container{
+
+}
+  @font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('../assets/fonts/TTLakes/TTLakes-Medium.woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('../assets/fonts/TTLakes/TTLakes-Bold.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('../assets/fonts/TTLakes/TTLakesCompressed-Regular.woff');
+    font-weight: 400;
+    font-style: normal;
+}

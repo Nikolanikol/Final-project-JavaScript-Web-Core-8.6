@@ -1,0 +1,218 @@
+.mobile-slider{
+    display: none;
+}
+.swiper-button-prev, .swiper-button-next, .swiper-scrollbar{
+    display: none;
+}
+.slider__row-hide{
+    display: none !important;
+}
+.swiper {
+    // width: 304px;
+    // position: absolute;
+    // left: -8px;
+    position: relative;
+
+  }
+  .swiper-pagination{
+    position: relative;
+    padding-top: 20px;
+  }
+  .swiper-wrapper{
+    height: 72px;
+    position: relative;
+    left: -25px;
+    // position: absolute;
+    // left: -8px;
+    // padding: 16px;
+  }
+  .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #818184;
+    width: 20px;
+    height: 20px;
+  }
+.swiper-slide{
+    // padding: 20px 16px;
+    display: block;
+    border-radius: 20px;
+    background-color: #fff;
+    max-width: 230px;
+    // border: 1px solid red;
+
+}
+.slider{
+        margin-bottom: 16px;
+      &__row{
+          width: 100%;
+        //   padding: 16px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #fff;
+          padding: 20px 16px;
+         border-radius: 20px;    
+    
+      }
+      &__btn{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid $btn-red-color;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          z-index: 1;
+          position: relative;
+          top: 0;
+           &:hover{
+              top: 3px;
+}
+      }
+    }
+  .slider__wrapper{
+    padding: 16px;
+    background-color: #F8F8F8;
+  }
+  .slider-section{
+  }
+  .slider-section__title{
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+        padding: 16px;
+
+  }
+// .slider-section{
+//     max-width: 320px;
+//     margin: 0 auto;
+//     padding: 16px;
+//     background-color: #F8F8F8;
+//     &__title{
+//         font-size: 16px;
+//         font-weight: 400;
+//         text-transform: uppercase;
+//         margin-bottom: 32px;
+//     }
+//     &__img-wrapper{
+//         max-width: 118px;
+//         display: flex;
+//         justify-content: start;
+//     }
+// }
+// .slider__row{
+//     width: 240px;
+// }
+.brand-items__row{
+    margin-bottom: 24px;
+}
+@media(max-width: 25000px){
+    .brand-items__row{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        row-gap: 16px;
+
+    }
+    .slider__row{
+        max-width: 240px ;
+
+    }
+}
+
+@media(max-width: 2240px){
+    .brand-items__row{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        row-gap: 16px;
+
+    }
+    .slider__row{
+        max-width: 240px ;
+    }
+    .slider-section__title{
+        padding-top: 16px;
+        padding-left: 32px;
+        padding-bottom: 16px;
+        background-color: #fff;
+    }
+    .brand-items{
+        padding: 24px 32px;
+        // margin-bottom: 24px;
+        background-color: #F8F8F8;
+    }
+    .brand-items__button{
+        margin-top: 24px;
+    }
+}
+@media(max-width: 1536px) {
+
+    .slider-section__title{
+        padding-top: 15px;
+        padding-left: 24px;
+        padding-bottom: 40px;
+    }
+    .slider__row{
+        max-width: 22px !important;
+        min-width: 200px;
+        height: 72px;
+        border: 2px solid #EAEAEA;
+        border-radius: 20px;
+        padding: 16px;
+        max-width: 224px;
+    }
+    .brand-items{
+        background-color: #F8F8F8;
+        padding-bottom: 200px;
+        padding-top: 24px;
+        padding-left: 24px;
+    }
+    .brand-items__row{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 16px;
+        column-gap: 24px;
+
+    }
+    .brand-items__button{
+        position: relative;
+        top: 0;
+        margin-top: 24px;
+        padding-left: 33px;
+        line-height: 24px;
+        &::before{
+            content: '';
+            background-image: url('../icons/arrow-button.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            transform: translateY(-50%);
+        }
+        &:hover{
+            top: 3px;
+        }
+    }
+}
+
+
+
+@media(max-width: 640px){
+    .brand-items{
+        display: none ;
+    }
+    .mobile-slider{
+        display: block;
+    }
+}
+
+

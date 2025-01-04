@@ -1,0 +1,30 @@
+.oferta {
+    background-color: rgba(248, 248, 248, 1);
+    padding: 24px 47px;
+}
+.oferta-text {
+    max-width: 425px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.oferta-link {
+    color: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+
+    &::after{
+        content: '';
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: -30px;
+        background-image: url(../img/icon/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
